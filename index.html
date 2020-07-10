@@ -8,16 +8,16 @@
     <link rel="shortcut icon" href="images/watchIcon.png" type="image/x-icon">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/bootstrap-4.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 </head>
 
 <body id="colors">
     <div class="container">
-
         <!-- topter -->
-
-        <div class="heading" id="heading">
-            <h1>STOPWATCH</h1>
+        <div >
+            <h1 id="heading" class="heading">STOPWATCH</h1>
         </div>
         <div class="me" id="me">
             <h5>Developer: Hassan Javed</h5>
@@ -25,27 +25,25 @@
         <!-- Themes -->
         <div class="themes" id="themes">
             Dark
-            <input type="radio" name="theme" id="Dark" onclick="dark()">
+            <input type="radio" name="theme" id="Dark" onclick="dark()" >
             Light
-            <input type="radio" name="theme" id="Light" onclick="light()">
+            <input type="radio" name="theme" id="Light" onclick="light()" checked>
         </div>
         <!-- StopWatch -->
-     
         <div class="watchArea" id="watchArea">
             <h1>
                 <span id="min">00</span> :
                 <span id="sec">00</span> :
                 <span id="msec">00</span>
-              </h1>
+            </h1>
         </div>
         <div class="buttonArea">
-            <button id="start" onclick="startStop()">Start</button>
-            <button onclick="reset()">Reset</button>
-            <button id="lap" onclick="Lap()">laps</button>
+            <button class="re" id="re"  onclick="reset()"><i class="fa fa-repeat " aria-hidden="true"></i></button>
+            <button id="start" onclick="startStop()"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button class="re"  id="lap" onclick="Lap()">laps</button>
         </div>
         <div class="laps">
-
-            <ul id="laps"></ul>
+            <ul  id="laps"></ul>
         </div>
 
     </div>
