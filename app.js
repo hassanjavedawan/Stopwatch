@@ -115,7 +115,7 @@ function reset() {
     secHeading.innerHTML = "00"
     msecHeading.innerHTML = "00"
     stop()
-    startstop()
+    startStop()
 }
 
 // lap temporary storage
